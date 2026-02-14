@@ -1,0 +1,7 @@
+{
+  "eventType": "BookmarkUpvotedEvent",
+  "eventId": "uuid",
+  "occurredAt": "2026-02-14T00:00:00Z",
+  "bookmarkId": "string",
+  "upvoterUserId": "string"
+}

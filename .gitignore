@@ -1,0 +1,43 @@
+# Maven
+/target/
+**/target/
+
+# IntelliJ
+.idea/
+*.iml
+
+# VSCode
+.vscode/
+
+# OS
+.DS_Store
+
+# Logs
+*.log
+
+# Local env files (keep example files tracked)
+.env
+.env.*
+!.env.example
+
+# Frontend
+/frontend/node_modules/
+/frontend/dist/
+
+# Local logs
+/logs/
+
+# Secrets / keys / certs
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+*.jks
+*.keystore
+
+# Local DB/data dumps
+*.sqlite
+*.db
+*.dump
+*.bak

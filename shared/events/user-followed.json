@@ -1,0 +1,7 @@
+{
+  "eventType": "UserFollowedEvent",
+  "eventId": "uuid",
+  "occurredAt": "2026-02-14T00:00:00Z",
+  "followerUserId": "string",
+  "followedUserId": "string"
+}
