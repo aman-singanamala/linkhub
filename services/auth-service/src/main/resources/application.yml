@@ -1,0 +1,33 @@
+server:
+  port: ${PORT:8081}
+
+spring:
+  application:
+    name: auth-service
+  datasource:
+    url: jdbc:postgresql://localhost:5432/auth_db
+    username: bookmark
+    password: bookmark
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+
+app:
+  jwt:
+    # From environment: APP_JWT_SECRET
+    secret: ${APP_JWT_SECRET}
+    expirationSeconds: 3600
+    issuer: "auth-service"
+  google:
+    # From environment: APP_GOOGLE_CLIENT_ID
+    clientId: ${APP_GOOGLE_CLIENT_ID}
+    # From environment: APP_GOOGLE_CLIENT_SECRET (not used for ID token verification)
+    clientSecret: ${APP_GOOGLE_CLIENT_SECRET}
+    issuer: "https://accounts.google.com"
+    jwkSetUri: "https://www.googleapis.com/oauth2/v3/certs"
