@@ -4,6 +4,10 @@
     {
       "source": "/api/:path*",
       "destination": "https://api-gateway-699o.onrender.com/:path*"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
     }
   ]
 }
